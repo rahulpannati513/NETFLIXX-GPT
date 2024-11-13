@@ -1,16 +1,13 @@
-import React, { useEffect } from "react";
-import { API_CONSTANTS } from "../utils/constants";
-import { useDispatch, useSelector } from "react-redux";
-import { addTrailerVideo } from "../utils/moviesSlice";
+import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 
 const VideoBackground = ({ movieId }) => {
-  const dispatch = useDispatch();
   //fetch triailer video  and updating the with the tariler video
 
-  const trailervideo = useSelector((store) => store.movies?.trailerVideo);
+  useMovieTrailer(movieId);
 
-  const trailer = useMovieTrailer(movieId);
+  const trailervideo = useSelector((store) => store.movies?.trailerVideo);
+  console.log("https://www.youtube.com/embed/" + trailervideo?.key);
 
   return (
     <div>
