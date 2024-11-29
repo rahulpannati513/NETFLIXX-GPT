@@ -1,7 +1,3 @@
-Here is an enhanced README file for your `NETFLIXX-GPT` project:
-
----
-
 # NETFLIXX-GPT
 
 NETFLIXX-GPT is a modern web application designed to replicate the Netflix user experience, built using React, Redux, and Tailwind CSS. This project integrates The Movie Database (TMDB) API to provide dynamic and up-to-date movie information, enhancing the user experience through engaging visuals and interactive features.
